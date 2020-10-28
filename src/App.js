@@ -42,7 +42,7 @@ function App() {
   return (
     <div>
       {posts.map((elem) => (
-        <BlogTile key={elem.id} title={elem.title} intro={introSentence(elem.intro)} />
+        <BlogTile key={`post-${elem.id}`} title={elem.title} intro={introSentence(elem.intro)} />
       ))}
     </div>
   );
